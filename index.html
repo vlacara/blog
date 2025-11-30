@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Evolution of New Media • Jobelle Flores Blog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Satoshi:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <style>
+    :root{
+      --bg:#0b0a18;
+      --card:rgba(25,25,45,0.55);
+      --gold:#f4d03f;
+      --cream:#fdf4e3;
+      --soft-gold:#e6c200;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{
+      font-family:'Satoshi',sans-serif;
+      background:var(--bg);
+      color:var(--cream);
+      line-height:1.85;
+      font-size:18px;
+      overflow-x:hidden;
+    }
+
+    /* Soft golden bubbles background */
+    #bubbles{position:fixed;inset:0;pointer-events:none;z-index:-1;}
+    .bubble{
+      position:absolute;
+      background:radial-gradient(circle,rgba(244,208,63,0.16),transparent 70%);
+      border-radius:50%;opacity:0.7;
+      animation:float 22s infinite linear;
+    }
+    @keyframes float{
+      0%{transform:translateY(100vh) scale(0.3);opacity:0}
+      12%{opacity:0.7}88%{opacity:0.7}
+      100%{transform:translateY(-150px) scale(1);opacity:0}
+    }
+
+    /* Header with hero image */
+    header{
+      height:100vh;
+      background:linear-gradient(rgba(11,10,24,0.7),rgba(11,10,24,0.9)),
+                  url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&q=85') center/cover no-repeat;
+      display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;
+      color:white;padding:0 40px;
+    }
+    .blog-name{font-family:'Playfair Display',serif;font-size:6.5rem;color:var(--gold);text-shadow:0 0 80px rgba(244,208,63,0.5);}
+    .tagline{font-size:2.2rem;margin:20px 0 60px;font-weight:300;}
+    .author-badge{
+      display:flex;align-items:center;gap:25px;background:rgba(255,255,255,0.1);padding:20px 40px;
+      border-radius:60px;backdrop-filter:blur(15px);border:2px solid var(--gold);
+    }
+    .avatar{
+      width:100px;height:100px;border-radius:50%;background:var(--gold);color:var(--bg);
+      font-size:3rem;font-weight:700;display:flex;align-items:center;justify-content:center;
+    }
+    .author-info h3{font-size:2.4rem;color:var(--gold);}
+    .author-info p{font-size:1.6rem;color:white;margin-top:6px;}
+
+    /* Main article */
+    .article{max-width:860px;margin:0 auto;padding:100px 40px 180px;}
+    .post-title{
+      font-family:'Playfair Display',serif;font-size:5.2rem;color:var(--gold);text-align:center;
+      margin:40px 0 30px;line-height:1.2;
+    }
+    .meta{text-align:center;font-size:1.6rem;color:#bbb;margin-bottom:90px;}
+
+    .content h2{
+      font-family:'Playfair Display',serif;font-size:3.6rem;color:var(--gold);margin:90px 0 32px;
+    }
+    .content p{
+      font-size:1.95rem;color:var(--cream);margin:32px 0;text-align:justify;
+    }
+
+    /* Beautiful images */
+    .img-full{
+      width:100%;border-radius:20px;margin:70px 0;
+      box-shadow:0 30px 80px rgba(0,0,0,0.8);
+      border:3px solid rgba(244,208,63,0.3);
+    }
+    .img-inline{
+      float:right;width:380px;margin:20px 0 20px 40px;
+      border-radius:16px;box-shadow:0 20px 50px rgba(0,0,0,0.6);
+      border:2px solid var(--gold);
+    }
+
+    .highlight{
+      background:rgba(244,208,63,0.1);border-left:6px solid var(--gold);
+      padding:40px;border-radius:0 14px 14px 0;margin:70px 0;font-size:2rem;font-style:italic;
+    }
+    table{
+      width:100%;border-collapse:collapse;margin:70px 0;background:var(--card);
+      border-radius:16px;overflow:hidden;font-size:1.8rem;
+    }
+    th,td{padding:22px;text-align:left;border-bottom:1px solid rgba(244,208,63,0.2);}
+    th{background:rgba(244,208,63,0.15);color:var(--gold);}
+
+    .closing{
+      text-align:center;margin:160px 0 100px;
+      font-family:'Playfair Display',serif;font-size:4.5rem;color:var(--gold);
+    }
+
+    footer{
+      text-align:center;padding:120px 20px 80px;font-size:1.6rem;color:#888;
+      border-top:1px solid rgba(244,208,63,0.15);
+    }
+  </style>
+</head>
+<body>
+
+<div id="bubbles"></div>
+
+<header>
+  <h1 class="blog-name">Jobelle Flores Blog</h1>
+  <p class="tagline">Digital Culture • Media Literacy • Future Thinking</p>
+  <div class="author-badge">
+    <div class="avatar">JF</div>
+    <div class="author-info">
+      <h3>JOBELLE FLORES</h3>
+      <p>Grade 12 • Media & Information Literacy</p>
+    </div>
+  </div>
+</header>
+
+<div class="article">
+  <h1 class="post-title">The Evolution of New Media:<br>From ARPANET to Artificial Intelligence</h1>
+  <p class="meta">By Jobelle Flores • 30 November 2025 • 12 minute read</p>
+
+  <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&q=85" alt="Digital network" class="img-full">
+
+  <div class="content">
+
+    <h2>1. Defining New Media in 2025</h2>
+    <p>
+      New media is interactive digital content created, distributed, and consumed through networked technologies. Unlike traditional media, it is participatory, hyperlinked, and constantly evolving — transforming every user into a potential creator and publisher.
+    </p>
+
+    <h2>2. A Visual Timeline of Transformation</h2>
+
+    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?ixlib=rb-4.0.3&auto=format&fit=crop&q=85" alt="ARPANET to AI" class="img-inline">
+
+    <p><strong>1969 – ARPANET</strong><br>First message ever: “LO” (system crashed). Only four computers connected.</p>
+    <p><strong>1991 – World Wide Web</strong><br>Tim Berners-Lee releases it for free. First website still live.</p>
+    <p><strong>2004–2006 – Web 2
